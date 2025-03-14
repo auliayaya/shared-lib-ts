@@ -20,7 +20,7 @@ jobs:
       - run: npm run build
       - run: |
           echo @auliayaya:https://npm.pkg.github.com/ > build/.npmrc
-          echo '//npm.pkg.github.com/:_authToken=${NPM_TOKEN}' >> build/.npmrc
+          echo '//npm.pkg.github.com/:_authToken=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' >> build/.npmrc
       - run: npm publish
         working-directory: ./build
         env:

@@ -5,7 +5,7 @@
   "description": "Helpers library for general app",
   "name": "@auliayaya/shared-lib",
   "author": "Aulia Illahi",
-  "url": "https://github.com/auliayaya/shared-lib-ts.git.git",
+  "url": "git+https://github.com/auliayaya/shared-lib-ts.git.git",
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm && tsc --outDir build/src && node scripts/build-package.js",
     "build:cjs": "NODE_ENV=production BABEL_ENV=cjs babel src --presets=./scripts/babel-preset.js --extensions .ts,.tsx --ignore src/**/*.specs.tsx --out-dir build/cjs --source-maps",
@@ -20,7 +20,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/auliayaya/shared-lib-ts.git"
+    "url": "git+https://github.com/auliayaya/shared-lib-ts.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
